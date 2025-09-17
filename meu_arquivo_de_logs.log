@@ -1,2 +1,40 @@
 2025-09-17T16:44:06.580380-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
 2025-09-17T16:44:06.581382-0300 INFO Função 'soma' retornou 5 utils_log.py
+2025-09-17T17:35:32.109434-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:35:32.109434-0300 INFO Função 'soma' retornou 5 utils_log.py
+2025-09-17T17:35:44.646740-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:35:44.650917-0300 INFO Função 'soma' executada em 0.0000 segundos timer_decorator.py
+2025-09-17T17:35:44.651946-0300 INFO Função 'soma' retornou 5 utils_log.py
+2025-09-17T17:36:58.912499-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:36:58.913500-0300 ERROR Exceção capturada em 'soma': name 'time' is not defined utils_log.py
+Traceback (most recent call last):
+
+  File "C:\Estudos\Python\aula09_bootcamp\exemplo_01.py", line 12, in <module>
+    print(soma(2,3))
+          └ <function soma at 0x000001ED49F9A5C0>
+
+> File "C:\Estudos\Python\aula09_bootcamp\utils_log.py", line 24, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (2, 3)
+             └ <function soma at 0x000001ED4799D1C0>
+
+  File "C:\Estudos\Python\aula09_bootcamp\timer_decorator.py", line 11, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (2, 3)
+             └ <function soma at 0x000001ED4799CD60>
+
+  File "C:\Estudos\Python\aula09_bootcamp\exemplo_01.py", line 9, in soma
+    time.sleep(2)
+
+NameError: name 'time' is not defined
+2025-09-17T17:37:18.323347-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:37:20.324944-0300 INFO Função 'soma' executada em 2.0006 segundos timer_decorator.py
+2025-09-17T17:37:20.326508-0300 INFO Função 'soma' retornou 5 utils_log.py
+2025-09-17T17:37:40.158237-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:37:40.158237-0300 INFO Função 'soma' executada em 0.0000 segundos timer_decorator.py
+2025-09-17T17:37:40.159739-0300 INFO Função 'soma' retornou 5 utils_log.py
+2025-09-17T17:38:31.472549-0300 INFO Chamando função 'soma' com args (2, 3) e kwargs {} utils_log.py
+2025-09-17T17:38:36.474499-0300 INFO Função 'soma' executada em 5.0010 segundos timer_decorator.py
+2025-09-17T17:38:36.475518-0300 INFO Função 'soma' retornou 5 utils_log.py
